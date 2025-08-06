@@ -364,28 +364,33 @@ messageBox.style.display = (messageBox.style.display === "none") ? "block" : "no
   user-select: none;
   text-align: center;
 " title="click me">
-  <img src="Screenshot_2025-08-06_132406-removebg-preview.png" 
+  <img src="image/Screenshot_2025-08-06_132406-removebg-preview.png" 
        alt="Secret Trigger" 
        style="width: 300px; height: auto;">
 </div>
+
+<!-- Message box di atas kepala karakter -->
 <div class="container">
-<div class="message-box" id="messageBox" style="
-  display: none;
-  position: fixed;
-  bottom: 350px; 
-  right: 90px;   
-  background-color: #eaa5ad;
-  color: #191717;
-  padding: 14px 22px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  z-index: 99;
-  font-family: 'Quicksand';
-  font-size: 16px;
-  max-width: 260px;
-">
-  You found the secret message 🫣<br>
-  Just wanna say, You're the best old man I've ever met 🧓💌
+  <div class="message-box" id="messageBox" style="
+    display: none;
+    position: fixed;
+    bottom: 320px;  /* kira-kira di atas kepala */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eaa5ad;
+    color: #191717;
+    padding: 14px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 99;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    max-width: 260px;
+    text-align: left;
+  ">
+    You found the secret message 🫣<br>
+    Just wanna say, You're the best old man I've ever met 🧓💌
+  </div>
 </div>
 </div>
 
@@ -399,6 +404,7 @@ function revealSecret() {
 </script>
 </body>
 </html>
+
 
 
 
