@@ -354,17 +354,19 @@ messageBox.style.display = (messageBox.style.display === "none") ? "block" : "no
   </script>
 
 <div onclick="revealSecret()" style="
-position: fixed;
-bottom: 100px;
-right: 90px;
-font-size: 15px;
-cursor: pointer;
-z-index: 98;
-user-select: none;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 98;
+  user-select: none;
+  text-align: center;
 " title="click me">
-<img src="Screenshot_2025-08-06_132406-removebg-preview.png" 
-    alt="Secret Trigger" 
-    style="width: 300px; height: auto;">
+  <img src="Screenshot_2025-08-06_132406-removebg-preview.png" 
+       alt="Secret Trigger" 
+       style="width: 300px; height: auto;">
 </div>
 
 <div class="container">
@@ -398,6 +400,7 @@ function revealSecret() {
 </script>
 </body>
 </html>
+
 
 
 
